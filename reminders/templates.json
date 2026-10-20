@@ -1,0 +1,7 @@
+[
+  {
+    "version": "v1",
+    "subject": "Your cart is waiting, {{.Recipient.FirstName}}",
+    "body": "Hi {{.Recipient.FirstName}},\n\nYou left these items in your cart:\n{{range .Cart.Items}}- {{.Name}} × {{.Quantity}}\n{{end}}\nContinue shopping: {{.Cart.URL}}"
+  }
+]
